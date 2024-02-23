@@ -97,7 +97,21 @@ This enhanced architecture provides scalability and high availability by automat
 - `cd My-Django-Project`
 - `pip3 install -r requirements.txt`
 - `python manage.py migrate`
-- `python manage.py runserver 0.0.0.0:8000 `
+- `python manage.py runserver 0.0.0.0:8000
+   `
+## Technologies Used
+1. Frontend:
+   - HTML, CSS, JavaScript
+   - Bootstrap framework for responsive design
+2. Backend:
+   - Django framework
+   - PostgreSQL database for data storage
+     
+## How to Use
+  - Visit the homepage to explore the restaurant's offerings and access user authentication features.
+  - Register for a new account or login with existing credentials.
+  - Explore the menu section to view available dishes and place orders.
+  - Make reservations using the reservation form and receive confirmation.
 
 ## AWS Architecture
 ![Highly Avaliable and Scalable AWS architecture](https://github.com/Mahmoudgaber114/Django-Restaurant-Web-Application/assets/65420063/151a2eed-8bb4-40bc-843c-9d7731c77bed)
