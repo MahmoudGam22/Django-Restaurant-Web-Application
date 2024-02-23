@@ -1,0 +1,24 @@
+{% extends "menu/base.html" %}
+{% load static %}
+{% block content %}
+<!-- <home> -->
+<header id="home">
+    <div class="overlay">
+        <div class="caption  flex-column  d-flex justify-content-center align-items-center">
+            <h2 class="welcome">Welcome to Our Restaurant</h2>
+            <h4><span class="typed"></span></h4>
+            <p class="py-3">discover our daily specials, promotions, and discounts<br>for an even more delightful
+                experience</p>
+            <a href="{% url 'reserve_table' %}" class="reserve">Reservation</a>
+            <div class="scroll"> <a href=""></a></div>
+        </div>
+    </div>
+</header>
+<!-- </home>  -->
+<script src="{% static 'js/typed.js' %}"></script>
+<script src="{% static 'js/sketch.min.js' %}"></script>
+<script src="{% static 'js/jquery-3.4.1.min.js' %}"></script>
+<script src="{% static 'js/popper.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/script.js' %}"></script>
+{% endblock content %}

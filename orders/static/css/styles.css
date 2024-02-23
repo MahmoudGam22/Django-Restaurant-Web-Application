@@ -1,0 +1,31 @@
+/* Add your custom styles here */
+
+/* Center the form */
+.container {
+    align-items: center;
+    justify-content: center;
+}
+
+/* Style for the form */
+form {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for the checkboxes */
+.form-check {
+    margin-bottom: 10px;
+}
+
+/* Style for the submit button */
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}

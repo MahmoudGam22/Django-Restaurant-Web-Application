@@ -1,0 +1,47 @@
+{% load static %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Confirmation</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Your Custom CSS (if any) -->
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+
+<body>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <nav class=" navbar-dark bg-dark mb-3" style="text-align: center;">
+                    <a style="color: white;" class="navbar-brand" href="{% url 'home' %}"><h4>Home</h4></a>
+                </nav>
+                <h2 class="text-center mb-4">Order Confirmation</h2>
+
+                <p class="lead">Thank you for placing your order! Order details:</p>
+
+                <p><strong>Order ID:</strong> {{ order.id }}</p>
+                <p><strong>Total Price:</strong> ${{ order.total_price }}</p>
+
+                <p><strong>Items:</strong></p>
+                <ul class="list-group">
+                    {% for product in order.products.all %}
+                    <li class="list-group-item">{{ product.name }} - ${{ product.price }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and Popper.js (if needed) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
+{% endblock content %}

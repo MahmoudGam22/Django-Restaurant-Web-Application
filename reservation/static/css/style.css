@@ -1,0 +1,292 @@
+
+/*----<navbar>------*/
+nav
+{
+    width: 100%;
+}
+.navbar-light .navbar-brand {
+    color: #fff;
+}
+.navbar-light .navbar-nav .nav-link
+{
+    color:#fff;
+}
+.navbar-light .navbar-nav .active
+{
+   color: #e65f78 !important;
+}
+.navbar-light .navbar-nav .nav-link:hover
+{
+   color: #e65f78 !important;
+}
+.navbar-brand {
+    font-size: 30px;
+    font-weight: 600;
+}
+.navbar-light .navbar-brand:focus {
+    color: #fff;
+}
+.navbar-light .navbar-brand:hover {
+    color: #fff;
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+  color: #fff;
+}
+/*----</navbar>------*/
+/*----<home>------*/
+#home
+{
+    background-image: url(../images/Background.jpg);
+    color: #fff;
+    height: 100vh;
+    background-size: 100% 100%;
+    background-position: center center;
+    background-attachment: scroll;
+    text-align: center;
+}
+#home .overlay
+{
+    background-color: rgba(0,0,0,0.7);
+    height: 100%;
+    width: 100%;
+}
+#home .overlay .caption
+{
+    height: 100%;
+}
+#home .overlay .caption h1
+{
+    font-size: 60px;
+    font-weight: 700;
+}
+
+#home .overlay .caption .reserve
+{
+    border: 2px solid #fff;
+    padding: 16px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    transition: all 0.2s;
+}
+#home .overlay .caption .cv:hover
+{
+    background-color: #fff;
+    color: black;
+}
+#home .scroll
+{
+    padding: 26px 15px;
+    border-radius: 20px;
+    border: 2px solid #fff;
+    position: absolute;
+    bottom: 50px;
+    animation: scroll 2s infinite;
+}
+#home .scroll::after
+{
+    content:"";
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    width: 5px;
+    height: 10px;
+    background-color: #fff;
+}
+.welcome
+{
+    font-size: 40px;
+}
+.typed {
+    color: #fff;
+    font-size: 30px;
+}
+
+@keyframes scroll
+{
+    0%{bottom: 20px;}
+    20%{bottom: 40px;}
+    40%{bottom: 20px;}
+    60%{bottom: 10px;}
+    80%{bottom: 40px;}
+    100%{bottom: 20px;}
+}
+#option
+{
+    position: fixed;
+    left: 0;
+    top:10%;
+    background-color: #fff;
+}
+#option .setting {
+
+    background-color: #2b2424;
+        float: right;
+        color: #fff !important;
+        padding: 5px;
+}
+#option-color
+{
+    width:132px;
+    height: 150px;
+}
+#option-color h6
+{
+    color:#000;
+}
+#option-color ul
+{
+    padding-left: 0;
+    padding-top: 5px;
+}
+#option-color ul li 
+{
+    list-style: none;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: blue;
+    border-radius: 50%;
+}
+/*----</home>------*/
+/*----media--------*/
+@media(max-width:991px)
+{
+    nav
+    {
+        background-color: #fff;
+    }
+    .navbar-light .navbar-nav .nav-link
+{
+    color:#000;
+}
+    .navbar-light .navbar-brand {
+    color: #000;
+}
+}
+/*---------------------<about>--------------------------*/
+h4 span
+{
+    color: #e65f78;
+}
+.social a li
+{
+    font-size: 20px;
+    border: 2px solid #d4d4d4;
+    border-radius: 50%;
+    padding: 7px;
+    margin-left: 5px;
+}
+.social a li:hover
+{
+   
+    border: 2px solid #e65f78;
+    transition: all 2s;
+    transform: scale(1.1,1.1);
+    color:#e65f78;
+}
+/*---------------------</about>--------------------------*/
+/*----------------------<Menu>-------------------------*/
+.Menu-box i , .client i
+{
+    color:#e65f78;
+}
+.Menu-box .line1
+{
+    width: 40px;
+    height: 2px;
+    background-color:#e65f78;
+    margin: 10px auto;
+    transition: width all 0.5s;
+}
+.Menu-box:hover .line1
+{
+    width: 60px;
+}
+.Menu button{
+    background-color: #e65f78;
+    border: 1px solid #e65f78;
+    padding: 12px;
+    width: 150px;
+    color: #fff;
+    text-transform: uppercase;
+}
+.Menu button:hover
+{
+    background-color: #dc3545 ;
+}
+.price {
+    color: #dc3545; 
+}
+/*----------------------</Menu>-------------------------*/
+/*----------------------<Reservation>-------------------------*/
+.icon i{
+    color: #e65f78;
+}
+.row form  input{
+    height: 50px;
+    border: 2px solid #e0e0e0;
+}
+.row form  textarea:focus , .row form  input:focus
+{
+    border-color: #dc3545;
+    box-shadow:none;
+} 
+.row form  button{
+    background-color: #e65f78;
+    border: 1px solid #e65f78;
+    padding: 12px;
+    width: 150px;
+    color: #fff;
+    text-transform: uppercase;
+}
+.row form button:hover
+{
+    background-color: #dc3545 ;
+}
+/*----------------------</Reservation>-------------------------*/
+/*----------------------<footer>-------------------------*/
+.footer{
+    background-image: url(../images/footer_background.jpg);
+    color: #fff;
+    height: 30vh;
+    background-size: 100% 100%;
+    background-position: center center;
+    background-attachment: scroll;
+    text-align: center;
+}
+.footer .social a li{
+    border: none;
+    color:#fff;
+    background-color: #dc3545 ;
+    ;
+    font-size: 20px;
+    padding: 10px;
+}
+.textmuted
+{
+    color:#fff;
+}
+
+/*--------------angle up----------------*/
+#up
+{
+    
+    position: fixed;
+    top: 90%;
+    left: 90%;;
+    background-color:#dc3545 ;
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    display: none;
+}
+#up i
+{
+    
+    color: #fff;
+    font-size: 25px;
+    margin-left: 3px;
+    margin-bottom:3px;
+}

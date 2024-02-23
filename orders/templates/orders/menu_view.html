@@ -1,0 +1,17 @@
+{% extends 'menu/base.html' %}
+{% block content %}
+<h2>Menu</h2>
+
+<form method="post" action="{% url 'order_view' %}">
+    {% csrf_token %}
+
+    {% for product in products %}
+    <label>
+        <input type="checkbox" name="product" value="{{ product.id }}">
+        {{ product.name }} - ${{ product.price }}
+    </label><br>
+    {% endfor %}
+
+    <button type="submit">Place Order</button>
+</form>
+{% endblock content %}
